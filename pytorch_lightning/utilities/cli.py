@@ -689,7 +689,7 @@ class LightningCLI:
 
     def parse_arguments(self, parser: LightningArgumentParser) -> None:
         """Parses command line arguments and stores it in ``self.config``."""
-        self.config = parser.parse_args()
+        self.config = parser.parse_args(args=[])
 
     def before_instantiate_classes(self) -> None:
         """Implement to run some code before instantiating the classes."""
